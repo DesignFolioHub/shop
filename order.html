@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Folio Hub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css
+  "
+    />
+    <link rel="stylesheet" href="order.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("3jUbIhy2UTZg-Jxp8");
+   })();
+</script>
+
+<!-- .................................................................... -->
+</head>
+<body>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: rgb(125, 94, 235)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Design Folio Hub logo.png" alt="DFH" width="35" height="35">
+        </a>
+        <a class="navbar-brand" href="index.html">Design Folio Hub</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html">Order Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <div class="gbox">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>YOUR ORDER</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Id" required>
+            <input type="text" id="phone" placeholder="Phone No." required>
+            <input type="text" id="subject" placeholder="What you want to order? Ex: Logo, Resume etc." required>
+            <textarea placeholder="Describe your order." id="message" rows="4" required></textarea>
+            <button type="submit">Send Order</button>
+            </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js
+  "></script>
+  <script src="order.js"></script>
+</body>
+</html>

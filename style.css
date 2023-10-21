@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+body{
+    background: #080957;
+    font-family: 'Kalam', sans-serif;
+    font-size: 400;
+}
+
+*{
+    color: blueviolet;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
